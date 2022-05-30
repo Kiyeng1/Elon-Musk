@@ -1,20 +1,30 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+} */
 
 body{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .container{
+    position: relative;
     width: 100%;
-    height: 100%;
-    /* display: grid; */
+    display: grid;
     grid-template-columns: 1fr 2fr;
+    /* box-shadow: 0px 10px 25px black; */
+    margin: 1.5rem;
+}
+
+.right_side {
+    font-size: 20px;
+    color: #fff;
+
 }
 
 .container .left_side{
@@ -26,8 +36,7 @@ body{
 
 .container .right_side{
     background-color: rgb(37, 37, 61);
-    /* padding: 5.4rem; */
-    float: l
+    padding: 5.4rem;
 }
 
 .profile h4{
@@ -40,6 +49,8 @@ body{
     align-items: center;
     padding-bottom: 3rem;
     float: left;
+    margin-right: 100px;
+    
 }
 
 .profile .image-setting{
@@ -48,6 +59,7 @@ body{
     height: 9rem;
     border-radius: 50%;
     overflow: hidden;
+    padding: 50px;
 }
 
 .profile .image-setting img{
@@ -57,11 +69,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
- .right_side .body{
-    color: #fff;
-    
 }
 
 button{
